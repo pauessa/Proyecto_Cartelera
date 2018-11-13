@@ -31,6 +31,7 @@ public class Conexion_DB {
 
     public void CerrarConexion(Connection con) throws Exception {
 
+        
         try {
             if (con != null) {
                 con.close();
