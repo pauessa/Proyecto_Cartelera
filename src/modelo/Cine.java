@@ -12,6 +12,7 @@ import java.util.ArrayList;
  * @author Pauessa
  */
 public class Cine {
+    private int id_cine;
     private String nombre;
     private String direcion;
     private String municipio;
@@ -27,6 +28,14 @@ public class Cine {
     }
 
     public Cine() {
+    }
+
+    public int getId_cine() {
+        return id_cine;
+    }
+
+    public void setId_cine(int id_cine) {
+        this.id_cine = id_cine;
     }
 
     public String getNombre() {

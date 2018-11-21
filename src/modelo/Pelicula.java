@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author Pauessa
  */
 public class Pelicula {
-
+    private int id;
     private String titulo;
     private String director;
     private String interpretes;
@@ -21,18 +21,30 @@ public class Pelicula {
     private String sinopsis;
     private ArrayList<Sesion> sesiones=new ArrayList<Sesion>();
 
-    public Pelicula(String titulo, String director, String interpretes, String categoria, String duracion) {
+    public Pelicula(String titulo, String director, String interpretes, String categoria, String duracion, String sinopsis) {
         this.titulo = titulo;
         this.director = director;
         this.interpretes = interpretes;
         this.categoria = categoria;
         this.duracion = duracion;
+        this.sinopsis = sinopsis;
     }
+
+  
     
     public Pelicula(){
         
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    
     public String getTitulo() {
         return titulo;
     }
