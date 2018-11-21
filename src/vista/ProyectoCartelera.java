@@ -77,6 +77,7 @@ public class ProyectoCartelera {
                     break;
                 case 7:
                     carte=cDao.cargarClases();
+                    break;
             }
         } while (op != 0);
 
